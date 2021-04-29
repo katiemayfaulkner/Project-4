@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.keywords {
+  display: none;
+}
+
+header {
+  width: 100%;
+  padding: 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 50px;
+}
+
+header img {
+  height: 45px;
+  padding-top: 25px;
+}
+
+header .navigation {
+  width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .navigation a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 25px 20px 0 20px;
+  border-bottom: white solid 4px;
+}
+
+header .navigation a:hover {
+  border-bottom: #f3976c solid 4px;
+}
+
+.hero {
+  padding: 50px;
+  text-align: center;
+  background-size: cover;
+}
+
+.hero img {
+  width: 120px;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero h1 {
+  color: white;
+}
+
+.hero button {
+  width: 140px;
+  margin: 30px;
+  font-size: 20px;
+  padding: 15px;
+  background-color: #f87e45;
+  color: white;
+  border: none;
+  border-radius: 25px;
+}
+
+.services {
+  padding: 25px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.services h2 {
+  font-size: 30px;
+}
+
+.description {
+  padding: 110px 150px;
+  background-size: cover;
+}
+
+.description div {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  background-color: rgba(35, 31, 32, 0.7);
+  color: white;
+  text-align: center;
+}
+
+.description div h2 {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.description div p {
+  padding: 20px 0;
+  font-size: 19px;
+  line-height: 25px;
+}
+
+.description div button {
+  width: 180px;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 15px;
+  background-color: #364577;
+  color: white;
+  border: none;
+  border-radius: 30px;
+}
+
+.work-showcase {
+  padding: 100px;
+  text-align: center;
+}
+
+.work-showcase h2 {
+  font-size: 28px;
+  padding-bottom: 30px;
+}
+
+.work-showcase .items {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.work-showcase .items .item {
+  width: 220px;
+  padding: 20px;
+}
+
+.work-showcase .items .item img {
+  width: 230px;
+}
+
+.work-showcase .items .item h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 0px;
+}
+
+.work-showcase .items .item p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.contact {
+  text-align: center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.contact h2 {
+  color: white;
+  line-height: 40px;
+}
+
+.contact button {
+  width: 140px;
+  margin-top: 30px;
+  font-size: 20px;
+  padding: 15px;
+  background-color: #f87e45;
+  color: white;
+  border: none;
+  border-radius: 25px;
+}
+
+.main-footer {
+  width: 100%;
+  background-color: #364577;
+  color: white;
+  padding: 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-footer h2 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.main-footer .icons {
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 35px;
+}
+
+.main-footer .icons i {
+  color: white;
+  font-size: 30px;
+}
+
+.main-footer .items {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-footer .items section {
+  display: block;
+  line-height: 25px;
+}
+
+.main-footer .items section h3 {
+  padding-bottom: 10px;
+}
+
+.main-footer .items section a {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
