@@ -11,7 +11,6 @@
 
 header {
   width: 100%;
-  padding: 0 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,16 +19,16 @@ header {
           justify-content: space-between;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  line-height: 50px;
+  max-width: 900px;
+  margin: 25px auto 0;
 }
 
 header img {
-  height: 45px;
-  padding-top: 25px;
+  height: 40px;
 }
 
 header .navigation {
-  width: 240px;
+  width: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,10 +40,10 @@ header .navigation {
 header .navigation a {
   text-decoration: none;
   color: black;
-  font-size: 16px;
-  text-transform: uppercase;
-  padding: 25px 20px 0 20px;
+  font-size: 17px;
+  font-weight: 500;
   border-bottom: white solid 4px;
+  padding: 0 20px 25px;
 }
 
 header .navigation a:hover {
@@ -59,10 +58,8 @@ header .navigation a:hover {
 
 .hero img {
   width: 120px;
-  padding: 20px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto;
 }
 
 .hero h1 {
@@ -74,29 +71,68 @@ header .navigation a:hover {
   margin: 30px;
   font-size: 20px;
   padding: 15px;
-  background-color: #f87e45;
-  color: white;
+  background-color: #f3976c;
+  color: black;
   border: none;
   border-radius: 25px;
+  cursor: pointer;
 }
 
 .services {
-  padding: 25px;
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 60px 0;
 }
 
 .services h2 {
   font-size: 30px;
+  margin: 0 auto 25px;
+  max-width: 800px;
+}
+
+.services div {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services div figure {
+  margin: 2%;
+}
+
+.services div figure h3 {
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.services div figure p {
+  font-size: 17px;
+  width: 230px;
+  font-weight: 300;
+}
+
+.services p {
+  width: 80%;
+  margin: 10px auto;
+  font-weight: 300;
+  font-size: 18px;
+  max-width: 650px;
 }
 
 .description {
-  padding: 110px 150px;
+  padding: 90px 110px;
   background-size: cover;
 }
 
-.description div {
+.description .wrapper {
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   padding: 50px;
@@ -105,36 +141,39 @@ header .navigation a:hover {
   text-align: center;
 }
 
-.description div h2 {
+.description .wrapper h2 {
   font-size: 25px;
   line-height: 30px;
 }
 
-.description div p {
-  padding: 20px 0;
+.description .wrapper p {
+  margin: 20px 0;
   font-size: 19px;
   line-height: 25px;
+  width: 100%;
 }
 
-.description div button {
+.description .wrapper button {
   width: 180px;
   font-size: 20px;
-  line-height: 25px;
   padding: 15px;
   background-color: #364577;
   color: white;
   border: none;
   border-radius: 30px;
+  cursor: pointer;
+  margin: 0 auto;
 }
 
 .work-showcase {
-  padding: 100px;
+  max-width: 850px;
+  margin: 100px auto;
   text-align: center;
 }
 
 .work-showcase h2 {
-  font-size: 28px;
-  padding-bottom: 30px;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 
 .work-showcase .items {
@@ -144,8 +183,8 @@ header .navigation a:hover {
 }
 
 .work-showcase .items .item {
-  width: 220px;
-  padding: 20px;
+  width: 230px;
+  margin: 20px;
 }
 
 .work-showcase .items .item img {
@@ -156,7 +195,7 @@ header .navigation a:hover {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 500;
-  padding: 15px 0px;
+  margin: 15px 0px;
 }
 
 .work-showcase .items .item p {
@@ -180,13 +219,14 @@ header .navigation a:hover {
   margin-top: 30px;
   font-size: 20px;
   padding: 15px;
-  background-color: #f87e45;
-  color: white;
+  background-color: #f3976c;
+  color: black;
   border: none;
   border-radius: 25px;
+  cursor: pointer;
 }
 
-.main-footer {
+footer {
   width: 100%;
   background-color: #364577;
   color: white;
@@ -195,13 +235,13 @@ header .navigation a:hover {
           box-sizing: border-box;
 }
 
-.main-footer h2 {
+footer h2 {
   text-align: center;
   font-size: 18px;
 }
 
-.main-footer .icons {
-  width: 350px;
+footer .icons {
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
   display: -webkit-box;
@@ -210,16 +250,27 @@ header .navigation a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 35px;
+  margin: 35px auto;
 }
 
-.main-footer .icons i {
+footer .icons a {
+  text-align: center;
+}
+
+footer .icons a i {
   color: white;
   font-size: 30px;
 }
 
-.main-footer .items {
-  padding: 20px;
+footer .icons a p {
+  margin-top: 10px;
+  font-weight: 200;
+  color: white;
+  text-decoration: none;
+}
+
+footer .items {
+  margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,17 +278,159 @@ header .navigation a:hover {
       justify-content: space-around;
 }
 
-.main-footer .items section {
+footer .items section {
   display: block;
   line-height: 25px;
 }
 
-.main-footer .items section h3 {
-  padding-bottom: 10px;
+footer .items section h3 {
+  margin-bottom: 10px;
 }
 
-.main-footer .items section a {
+footer .items section a {
   text-decoration: none;
   color: white;
+}
+
+.header {
+  max-width: 1300px;
+}
+
+.intro {
+  background-color: #364577;
+  color: white;
+  padding: 60px 0;
+  font-size: 20px;
+}
+
+.intro h1 {
+  margin: 0 0 30px 80px;
+}
+
+.intro p {
+  margin: 15px 0 15px 80px;
+  max-width: 800px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 60px;
+}
+
+.wrapper form {
+  max-width: 700px;
+  background-color: rgba(24, 21, 22, 0.7);
+  color: white;
+  padding: 25px;
+}
+
+.wrapper form .input {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrapper form .input label {
+  width: 100%;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.wrapper form .input label p {
+  font-size: 17px;
+}
+
+.wrapper form .input input,
+.wrapper form .input textarea {
+  border-radius: 8px;
+  height: 30px;
+  border: solid 2px black;
+  margin-bottom: 15px;
+}
+
+.wrapper form .input textarea {
+  height: 60px;
+  width: 80%;
+}
+
+.wrapper form button {
+  width: 150px;
+  margin-top: 25px;
+  font-size: 20px;
+  padding: 15px;
+  background-color: #f3976c;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper .contact-info {
+  background-color: rgba(24, 21, 22, 0.7);
+  color: white;
+  padding: 30px;
+}
+
+.wrapper .contact-info h2 {
+  padding-bottom: 15px;
+}
+
+.wrapper .contact-info p {
+  line-height: 25px;
+}
+
+.wrapper .contact-info p a {
+  text-decoration: none;
+  color: #f3976c;
+}
+
+.wrapper .contact-info h3 {
+  padding-top: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+  header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .work-showcase h2 {
+    font-size: 23px;
+  }
+  .work-showcase .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .work-showcase .items h3 {
+    padding: 10px 0px;
+  }
+  footer .items {
+    display: block;
+  }
+  footer .icons {
+    width: 85%;
+  }
+  .wrapper form,
+  .wrapper .contact-info {
+    width: 80%;
+  }
+  .description {
+    padding: 25px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

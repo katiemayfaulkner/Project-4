@@ -3,120 +3,118 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="keywords"
-		content="seo, google, website, internet, web design, design agency, design agency, design agency, design agency, design agency, design agency, logo design atlanta">
+	<meta name="keywords" content="seo, google, website, internet, web design, design agency, design agency, design agency, design agency, design agency, design agency, logo design atlanta">
 	<meta name="description" content="I'm Mike and your should hire me to build your website">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
-
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
+	<script src="https://kit.fontawesome.com/84bc669132.js" crossorigin="anonymous"></script>
 	<script src="./js/formHandler.js"></script>
 
 	<title>GoMikeDesigns Contact</title>
 </head>
 
 <body>
-	<header>
-		<div class="navbar-header">
-		
+	<header class="header">
+		<nav>
+	
 			<div class="keywords">
 				web agency atlanta, web strategy, web design, logo, website, web, internet, logo design
 			</div>
-		
+	
 			<img src="img/atlanta%20web%20design%20logo.png" alt="GoMikeDesigns Logo" />
-		
+	
 			<div class="keywords">
 				web agency atlanta, web strategy, web design, logo, website, web, internet, logo design
 			</div>
-		
+	
 			<button>
 				<span class="sr-only"> Toggle navigation </span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-		</div>
-		<div class="dropdown-nav">
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="page2.html">Contact</a>
-				</li>
-			</ul>
-		</div>
-		
+		</nav>
+	
+		<nav class="navigation">
+			<a href="index.html">Home</a>
+			<a href="page2.html">Contact</a>
+		</nav>
 	</header>
 	
-	<div>
+	<article class="intro" >
 		<h1> Let's talk web design! </h1>
-		<p>
-			I'm super excited that you want to work together.<br>Please fill in the form below or get
-			in touch so I can learn about your project <br>and we can setup time to talk websites and
-			Atlanta city love.
+		<p> I'm super excited that you want to work together.</p>
+		<p>Please fill in the form below or get in touch so I can learn about your project and we can set up time to talk websites and
+		Atlanta city love.
 		</p>
-	</div>
+	</article>
 		
-	<div>	
+	<div class="wrapper">
 		<form id="Contact Form" novalidate success-msg="Your message has been sent."
 			fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-			<div>
-				<label> Name </label>
+			<div class="input">
+				<label for="name"> Name : </label>
 				<input id="name" required />
 			</div>
 
-			<div>
-				<label> Email </label>
+			<div class="input">
+				<label for="email"> Email : </label>
 				<input id="email" type="email" required />
 			</div>
 
-			<div>
-				<label> How did you find me? </label>
-				<input type="email" required/>
+			<div class="input">
+				<label for="message"> How did you find me? </label>
+				<textarea id="message" required></textarea>
 			</div>
 
-			<div >
-				<label>
-					Project brief (Please be as detailed as possible including your company goals and any
-					improvements you'd like to have over your current website) <br>
+			<div class="input" >
+				<label for="project-brief">
+					Project brief 
+					<p> (Please be as detailed as possible including your company goals and any
+					improvements you'd like to have over your current website) </p>
 				</label>
-				<textarea id="message" rows="4" cols="50" required></textarea>
+				<textarea id="project-brief" required></textarea>
 			</div>
-			<button type="submit"> Let's go Mike </button>
-		</form>	
-		<p>
-			mike@gomikedesigns.com <br> +1 (404) 555-1234 <br> <br> 123 Peachtree Ave. Atlanta, GA <br> Available
-			9am–5pm, Mon-Fri <br> <br> Interested to learn about my freelance services? <br> Please visit
-			my <a href="index.html">other page</a>.
-		</p>	
-	</div>
-		
-	<a onclick="scrollToTarget('1')">
-		<button></button>
-	</a>
 
-	<footer>
-		<p>
-			GoMike Designs - Web designer living and loving Atlanta.<br>
-		</p>
-		<div>
+			<button type="submit"> Submit </button>
+		</form>	
+
+		<article  class="contact-info">
+			<h2>Additional contact information</h2>
+			<p> mike@gomikedesigns.com </p>
+			<p> +1 (404) 555-1234 </p>
+			<p> 123 Peachtree Ave. Atlanta, GA </p>
+			<p> Available 9am–5pm, Mon-Fri </p>
+			<h3> Interested to learn about my freelance services? </h3>
+			<p> Please visit my <a href="index.html">other page </a>. </p>
+
+			<a onclick="scrollToTarget('1')">
+				<button class="scroll-btn"> Scroll to top</button>
+			</a>
+		</article>
+	</div>
+
+	<footer class="contact-footer">
+		<h2> GoMike Designs - Web designer living and loving Atlanta.</h2>
+		<nav class="icons">
 			<a href="index.html">
-				<span class="fa fa-twitter icon-md"></span>
+				<i class="fab fa-twitter"></i>
+				<p> Twitter </p>
 			</a>
 			<a href="index.html">
-				<span class="fa fa-facebook icon-md"></span>
+				<i class="fab fa-facebook-f"></i>
+				<p> Facebook </p>
 			</a>
 			<a href="index.html">
-				<span class="fa fa-dribbble icon-md"></span>
+				<i class="fab fa-dribbble"></i>
+				<p>Dribbble</p>
 			</a>
 			<a href="index.html">
-				<span class="fa fa-instagram icon-md"></span>
+				<i class="fab fa-instagram"></i>
+				<p> Instagram </p>
 			</a>
-		</div>
+		</nav>
 	</footer>
 
 </body>

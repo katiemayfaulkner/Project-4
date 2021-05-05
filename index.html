@@ -1,6 +1,28 @@
 <!doctype html>
 <html lang="en">
 
+<!-- type: Capitalized first letter, short brief 50 chars max -->
+
+<!--
+Types List:
+seo
+a11y -> Accessibility
+perf -> Performance
+feat -> Feature
+style -> Responsive, general styling, or even fixing a style issue
+fix -> Fixing a functional bug
+refactor -> remain same functionality, refurbish/improve the code, get rid of unnecessary stuff
+
+ONE COMMIT DOES ONE THING
+
+Examples
+feat: Build responsive menu toggle button
+seo: Remove all 'keywords' repetitive tags
+seo: Remove deprecated 'keywords' meta
+a11y: Fix all contrast color problems
+
+-->
+
 <head>
 	<meta charset="utf-8">
 	<meta name="keywords" content="seo, google, website, internet, web design, design agency, design agency, design agency, design agency, design agency, design agency, logo design atlanta">
@@ -9,7 +31,6 @@
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<script src="https://kit.fontawesome.com/84bc669132.js" crossorigin="anonymous"></script>
-	<script src="./js/blocs.js"></script>
 	<title>GoMikeDesigns HomePage</title>
 </head>
 
@@ -17,7 +38,6 @@
 
 	<header>	
 		<nav>
-			
 			<div class="keywords"> 
 				web agency atlanta, web strategy, web design, logo, website, web, internet, logo design
 			</div>
@@ -43,7 +63,7 @@
 	</header>
 			
 	<div class="hero" style="background-image: url(img/atlanta\ made\ sign.jpg);">
-		<img src="img/atlanta%20web%20designer%20mike.png" alt="atlanta web designer mike,seo, google, website, internet, web design, design agency" />
+		<img src="img/atlanta%20web%20designer%20mike.png" alt="Profile picture with a cartoon character version of Mike" />
 		<h1> I'm Mike. </h1>
 
 		<a href="page2.html"> 
@@ -54,46 +74,48 @@
 	<article class="services">
 		<h2> I create websites and design graphics that help Atlanta companies become attractive and recognizable online. </h2>	
 
-		<figure>		
-			<span class="et-icon-browser sm-shadow icons icon-lg"></span>
-			<h3> Website Design	</h3>
-			<p >
-				Whether you have a website that needs a refresh or you're starting from scratch,
-				let's make a website that you can be proud of.
-			</p>
-		</figure>
+		<div>
+			<figure>		
+				<span class="et-icon-browser sm-shadow icons icon-lg"></span>
+				<h3> Website Design	</h3>
+				<p >
+					Whether you have a website that needs a refresh or you're starting from scratch,
+					let's make a website that you can be proud of.
+				</p>
+			</figure>
 
-		<figure>			
-			<span class="et-icon-presentation sm-shadow icons icon-lg"></span>
-			<h3> Website Strategy </h3>
-			<p>
-				Rather than suggesting trendy designs, I'll work with you to understand your business
-				goals and make sure we design to help you reach those goals.
-			</p>
-		</figure>
+			<figure>			
+				<span class="et-icon-presentation sm-shadow icons icon-lg"></span>
+				<h3> Website Strategy </h3>
+				<p>
+					Rather than suggesting trendy designs, I'll work with you to understand your business
+					goals and make sure we design to help you reach those goals.
+				</p>
+			</figure>
 
-		<figure>
-			<span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></span>
-			<h3> Logo Design </h3>
-			<p>
-				With your business representing Atlanta, your logo should shine. I&rsquo;ll work with you to
-				create logo and brand identity that will impress people you meet in town and online.
-			</p>
-		</figure>
+			<figure>
+				<span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+				<h3> Logo Design </h3>
+				<p>
+					With your business representing Atlanta, your logo should shine. I&rsquo;ll work with you to
+					create logo and brand identity that will impress people you meet in town and online.
+				</p>
+			</figure>
+		</div>
 
-		<p> 
-			"Mike's an awesome freelance web designer! He captured the essence of our company in our website and
-			has helped us double our online sales for our shop in Atlanta." 
+		<p>  
+			"Mike's an awesome <strong>freelance web designer</strong>! He captured the essence of our company in our website and
+			has helped us <strong>double our online sales</strong> for our shop in Atlanta." 
 		</p>
 		<p> Taylor Cook, project manager Apple Delights </p>
 
 	</article>
 	
 	<article class="description" style="background-image: url(img/atlanta\ made\ sign\ orange.jpg);">
-		<div>
+		<div class="wrapper">
 			<h2>
 				I love Atlanta, my hometown, and want to see all Atlanta businesses succeed. I help by offering
-				web design services that help local businesses stand out and attract new customers online.<br>
+				web design services that help local businesses stand out and attract new customers online.
 			</h2>
 			<p >
 				I'm super excited you're here. I partner with creative entrepreneurs and local Atlanta business
@@ -114,7 +136,7 @@
 		<div class="items">
 			<div class="item">
 				<a href="#" data-lightbox="img/11.jpg" data-gallery-id="gallery-1" data-caption="Website for Atlanta's Premiere dog salon" data-frame="snapshot-lb">
-					<img src="img/11.jpg"/>
+					<img src="img/11.jpg" alt="Japanese spitz dog standing in front of his owner in the middle of the street in Atlanta"/>
 				</a>
 				<h3> Website for Atlanta's premiere Dog Sitters </h3>
 				<p> I love dogs and was super excited to make a website for an Atlanta dog company. </p>
@@ -122,7 +144,7 @@
 
 			<div class="item">
 				<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="web redesign for the best cupcakes in Atlanta" data-frame="snapshot-lb"> 
-					<img src="img/2.jpg"/> 
+					<img src="img/2.jpg" alt="Four cupcakes, with multicolored sprinkes and blue icing, lined up in front of a blue and pink backdrop"/> 
 				</a>
 				<h3> Web redesign for the best Atlanta's cupcakes </h3>
 				<p> They make the best cupcakes in Atlanta and I wanted to show this online.</p>
@@ -132,7 +154,7 @@
 		<div class="items">
 			<div class="item">
 				<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1" data-caption="New logo and website for Atlanta's best tech gear shop" data-frame="snapshot-lb">
-					<img src="img/3.bmp"/>
+					<img src="img/3.bmp" alt="Photography and tech equipement orderly spread out on a dark grey backdrop"/>
 				</a>
 				<h3> New logo and website for Atl + Gear - Atlanta's best tech gear shop </h3>
 				<p> Whenever I'm wanting to improve my web design skills, this shop inspires me. </p>
@@ -140,9 +162,9 @@
 
 			<div class="item">
 				<a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1" data-caption="Atlanta's legal website generates 30% more clients after web redesign" data-frame="snapshot-lb">
-					<img src="img/4.bmp"/>
+					<img src="img/4.bmp" alt ="Smiling lawyer in a dark blue suit sitting in a helicopter on top of one of Atlanta's buildings"/>
 				</a>
-				<h3> Atlanta's legal new website - Generating 30% more law clients with a refresh </h3>
+				<h3> Atlanta's new legal website - Generating 30% more law clients with a refresh </h3>
 				<p> A few months ago, I created their new website and it's bringing lots of leads. </p>
 			</div>
 		</div>
@@ -155,21 +177,25 @@
 		</a>	
 	</article>
 
-	<footer class = "main-footer">
+	<footer>
 		<h2> GoMike Designs - Web designer living and loving Atlanta. </h2>
 
 		<nav class="icons">
-			<a class="social" href="index.html">
+			<a href="index.html">
 				<i class="fab fa-twitter"></i>
+				<p> Twitter </p> 
 			</a>
-			<a class="social" href="index.html">
+			<a href="index.html">
 				<i class="fab fa-facebook-f"></i>
+				<p> Facebook </p>
 			</a>
-			<a class="social" href="index.html">
+			<a href="index.html">
 				<i class="fab fa-dribbble"></i>
+				<p>Dribbble</p>
 			</a>
-			<a class="social" href="index.html">
+			<a href="index.html">
 				<i class="fab fa-instagram"></i>
+				<p> Instagram </p>
 			</a>	
 		</nav>
 
@@ -182,7 +208,6 @@
 				<h3> Partners </h3>
 				<ul>
 					<li><a href="car.com">car.com</a></li>
-					<li><a href="pizza.com">pizza.com</a></li>
 					<li><a href="myroof.com">myroof.com</a></li>
 					<li><a href="realestateseo.com">realestateseo.com</a></li>
 				</ul>
@@ -195,10 +220,7 @@
 					<li><a href="seodirectory.com">seodirectory.com</a></li>
 					<li><a href="marketingdirectory.com">marketingdirectory.com</a></li>
 					<li><a href="123seo.com">123seo.com</a></li>
-					<li><a href="123site.com">123site.com</a></li>
 					<li><a href="wordpressdirectory.com">wordpressdirectory.com</a></li>
-					<li><a href="agencylistatl.com">agencylistatl.com</a></li>
-					<li><a href="bestagencyatl.com">bestagencyatl.com</a></li>
 					<li><a href="seolist.com">seolist.com</a></li>
 				</ul>
 			</section>
@@ -206,15 +228,10 @@
 			<section>
 				<h3> Directories 2 </h3>
 				<ul>
-					<li><a href="betterseo.com">betterseo.com</a></li>
 					<li><a href="yesseo.com">yesseo.com</a></li>
-					<li><a href="seojuicelink.com">seojuicelink.com</a></li>
 					<li><a href="bestlinks.com">bestlinks.com</a></li>
 					<li><a href="linkalot.com">linkalot.com</a></li>
-					<li><a href="backlink.com">backlink.com</a></li>
 					<li><a href="linkjuicedirectory.com">linkjuicedirectory.com</a></li>
-					<li><a href="rankongoogle.com">rankongoogle.com</a></li>
-					<li><a href="trustedseo.com">trustedseo.com</a></li>
 				</ul>
 			</section>
 		</div>
