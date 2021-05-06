@@ -21,6 +21,7 @@ header {
 
 header img {
   height: 40px;
+  margin-bottom: 25px;
 }
 
 header .navigation {
@@ -40,6 +41,7 @@ header .navigation a {
   font-weight: 500;
   border-bottom: white solid 4px;
   padding: 0 20px 25px;
+  margin-top: 10px;
 }
 
 header .navigation a:hover {
@@ -72,8 +74,8 @@ header .navigation a:hover {
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .hero button:hover {
@@ -112,12 +114,11 @@ header .navigation a:hover {
 
 .services div figure img {
   height: 70px;
-  margin-bottom: 20px;
 }
 
 .services div figure h3 {
   text-transform: uppercase;
-  margin-bottom: 18px;
+  margin: 10px 0;
 }
 
 .services div figure p {
@@ -174,8 +175,8 @@ header .navigation a:hover {
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .description .wrapper a button:hover {
@@ -212,7 +213,7 @@ header .navigation a:hover {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 500;
-  margin: 15px 0px;
+  margin: 10px 0;
 }
 
 .work-showcase .items .item p {
@@ -241,8 +242,8 @@ header .navigation a:hover {
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .contact button:hover {
@@ -294,7 +295,7 @@ footer .icons a p {
 }
 
 footer .items {
-  margin: 20px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,10 +306,6 @@ footer .items {
 footer .items section {
   display: block;
   line-height: 25px;
-}
-
-footer .items section h3 {
-  margin-bottom: 10px;
 }
 
 footer .items section a {
@@ -323,16 +320,16 @@ footer .items section a {
 .intro {
   background-color: #364577;
   color: white;
-  padding: 60px 0;
+  padding: 60px 0 60px 80px;
   font-size: 20px;
 }
 
 .intro h1 {
-  margin: 0 0 30px 80px;
+  margin-bottom: 30px;
 }
 
 .intro p {
-  margin: 15px 0 15px 80px;
+  margin: 15px 0;
   max-width: 800px;
 }
 
@@ -349,7 +346,6 @@ footer .items section a {
 }
 
 .wrapper form {
-  max-width: 700px;
   background-color: rgba(24, 21, 22, 0.7);
   color: white;
   padding: 25px;
@@ -372,6 +368,7 @@ footer .items section a {
 
 .wrapper form .input label p {
   font-size: 17px;
+  max-width: 600px;
 }
 
 .wrapper form .input input,
@@ -396,8 +393,8 @@ footer .items section a {
   color: black;
   border: none;
   cursor: pointer;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .wrapper form button:hover {
@@ -421,8 +418,8 @@ footer .items section a {
 
 .wrapper .contact-info p a {
   color: #f3976c;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .wrapper .contact-info p a:hover {
@@ -434,14 +431,39 @@ footer .items section a {
   padding-top: 20px;
 }
 
+/* Medium devices (landscape tablets, 800px and up) */
+@media only screen and (max-width: 800px) {
+  header {
+    padding: 0 25px;
+  }
+  .intro {
+    padding: 60px 0 60px 25px;
+  }
+  .wrapper {
+    margin: 40px 25px;
+  }
+  .wrapper .contact-info {
+    margin: 35px 0 0;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 700px) {
   header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .services h2 {
+    font-size: 25px;
+    margin: 0 25px 30px;
+  }
+  .services figure {
+    width: 85%;
+  }
   .work-showcase h2 {
     font-size: 23px;
+    width: 90%;
+    margin: 0 auto;
   }
   .work-showcase .items {
     display: -webkit-box;
@@ -456,15 +478,17 @@ footer .items section a {
   .work-showcase .items h3 {
     padding: 10px 0px;
   }
-  footer .items {
-    display: block;
-  }
   footer .icons {
     width: 85%;
   }
-  .wrapper form,
-  .wrapper .contact-info {
-    width: 80%;
+  footer .items {
+    display: block;
+  }
+  footer .items section {
+    margin-bottom: 30px;
+  }
+  .intro {
+    padding: 60px 25px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
