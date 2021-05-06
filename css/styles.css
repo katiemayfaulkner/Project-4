@@ -72,6 +72,13 @@ header .navigation a:hover {
   border: none;
   border-radius: 25px;
   cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.hero button:hover {
+  background-color: #c27755;
+  color: white;
 }
 
 .services {
@@ -128,7 +135,7 @@ header .navigation a:hover {
 }
 
 .description {
-  padding: 90px 110px;
+  padding: 90px 25px;
   background-size: cover;
 }
 
@@ -163,7 +170,12 @@ header .navigation a:hover {
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  margin: 0 auto;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.description .wrapper button:hover {
+  background-color: #29365e;
 }
 
 .work-showcase {
@@ -225,6 +237,13 @@ header .navigation a:hover {
   border: none;
   border-radius: 25px;
   cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.contact button:hover {
+  background-color: #c27755;
+  color: white;
 }
 
 footer {
@@ -373,6 +392,13 @@ footer .items section a {
   color: black;
   border: none;
   cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.wrapper form button:hover {
+  background-color: #c27755;
+  color: white;
 }
 
 .wrapper .contact-info {
@@ -390,8 +416,14 @@ footer .items section a {
 }
 
 .wrapper .contact-info p a {
-  text-decoration: none;
   color: #f3976c;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.wrapper .contact-info p a:hover {
+  color: #c27755;
+  text-decoration: none;
 }
 
 .wrapper .contact-info h3 {
@@ -429,9 +461,6 @@ footer .items section a {
   .wrapper form,
   .wrapper .contact-info {
     width: 80%;
-  }
-  .description {
-    padding: 25px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

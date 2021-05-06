@@ -64,6 +64,12 @@ header {
     border: none;
     border-radius: 25px;
     cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+      background-color: #c27755;
+      color: white;
+    }
   }
 }
 
@@ -87,7 +93,7 @@ header {
     figure {
       margin: 2%;
 
-      img{
+      img {
         height: 70px;
         margin-bottom: 20px;
       }
@@ -115,7 +121,7 @@ header {
 }
 
 .description {
-  padding: 90px 110px;
+  padding: 90px 25px;
   background-size: cover;
 
   .wrapper {
@@ -142,14 +148,17 @@ header {
     button {
       width: 180px;
       font-size: 20px;
-      
       padding: 15px;
       background-color: #364577;
       color: white;
       border: none;
       border-radius: 30px;
       cursor: pointer;
-      margin: 0 auto;
+      transition: all .3s ease-in-out;
+
+      &:hover{
+        background-color: #29365e;
+      }
     }
   }
 }
@@ -209,6 +218,12 @@ header {
     border: none;
     border-radius: 25px;
     cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+      background-color: #c27755;
+      color: white;
+    }
   }
 }
 
@@ -341,6 +356,12 @@ footer {
       color: black;
       border: none;
       cursor: pointer;
+      transition: all .3s ease-in-out;
+
+      &:hover{
+        background-color: #c27755;
+        color: white;
+      }
     }
   }
 
@@ -357,8 +378,13 @@ footer {
       line-height: 25px;
 
       a {
-        text-decoration: none;
         color: #f3976c;
+        transition: all .3s ease-in-out;
+
+        &:hover{
+          color: #c27755;
+          text-decoration: none;
+        }
       }
     }
 
@@ -406,9 +432,5 @@ footer {
     .contact-info {
       width: 80%;
     }
-  }
-
-  .description {
-    padding: 25px;
   }
 }
