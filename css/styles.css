@@ -161,7 +161,11 @@ header .navigation a:hover {
   width: 100%;
 }
 
-.description .wrapper button {
+.description .wrapper a {
+  margin: 0 auto;
+}
+
+.description .wrapper a button {
   width: 180px;
   font-size: 20px;
   padding: 15px;
@@ -174,7 +178,7 @@ header .navigation a:hover {
   transition: all .3s ease-in-out;
 }
 
-.description .wrapper button:hover {
+.description .wrapper a button:hover {
   background-color: #29365e;
 }
 

@@ -145,7 +145,10 @@ header {
       width: 100%;
     }
 
-    button {
+    a{
+      margin: 0 auto;
+
+      button {
       width: 180px;
       font-size: 20px;
       padding: 15px;
@@ -159,6 +162,7 @@ header {
       &:hover{
         background-color: #29365e;
       }
+    }
     }
   }
 }
