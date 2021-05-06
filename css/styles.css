@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -406,6 +407,7 @@ footer .items section a {
   background-color: rgba(24, 21, 22, 0.7);
   color: white;
   padding: 30px;
+  position: relative;
 }
 
 .wrapper .contact-info h2 {
@@ -429,6 +431,27 @@ footer .items section a {
 
 .wrapper .contact-info h3 {
   padding-top: 20px;
+}
+
+.wrapper a {
+  margin: 35px auto 0;
+}
+
+.wrapper a button {
+  width: 180px;
+  font-size: 20px;
+  padding: 15px;
+  background-color: #364577;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper a button:hover {
+  background-color: #29365e;
 }
 
 /* Medium devices (landscape tablets, 800px and up) */
