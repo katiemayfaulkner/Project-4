@@ -25,6 +25,10 @@ header img {
   margin-bottom: 25px;
 }
 
+header button {
+  display: none;
+}
+
 header .navigation {
   width: 220px;
   display: -webkit-box;
@@ -472,9 +476,63 @@ footer .items section a {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 700px) {
-  header {
+  .header, header {
+    max-width: none;
+    margin: none;
+    padding: 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .header .for-responsive, header .for-responsive {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 25px;
+  }
+  .header .for-responsive img, header .for-responsive img {
+    margin: 0;
+  }
+  .header .for-responsive button, header .for-responsive button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .header .for-responsive button .sr-only, header .for-responsive button .sr-only {
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+  }
+  .header .for-responsive button .bar, header .for-responsive button .bar {
+    margin: 4px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 26px;
+    height: 2px;
+    border-radius: 1px;
+  }
+  .header .navigation, header .navigation {
+    width: 100%;
+    display: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header .navigation a, header .navigation a {
+    margin: 0;
+    width: 100%;
+    padding: 10px 0 10px 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .header .navigation a:hover, header .navigation a:hover {
+    background-color: rgba(0, 0, 0, 0.124);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   .services h2 {
     font-size: 25px;

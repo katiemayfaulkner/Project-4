@@ -36,18 +36,18 @@ a11y: Fix all contrast color problems
 <body>
 
 	<header>	
-		<nav>	
+		<nav class="for-responsive">	
 			<img src="img/atlanta%20web%20design%20logo.png" alt="GoMikeDesigns Logo"/>
 
-			<button>
+			<button id="dropdown">
 				<span class="sr-only"> Toggle navigation </span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
 			</button>
 		</nav>
 		
-		<nav class="navigation">		
+		<nav class="navigation" id="dropdown-menu">		
 			<a href="index.html">Home</a>	
 			<a href="contact.html">Contact</a>	
 	    </nav>		
@@ -225,6 +225,7 @@ a11y: Fix all contrast color problems
 			
 	</footer>
 
+	<script src="js/main.js"></script>
 </body>
 
 </html>

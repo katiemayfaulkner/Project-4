@@ -21,6 +21,10 @@ header {
     margin-bottom: 25px;
   }
 
+  button {
+    display: none;
+  }
+
   .navigation {
     width: 220px;
     display: flex;
@@ -396,19 +400,19 @@ footer {
     }
   }
 
-  a{
+  a {
     margin: 35px auto 0;
 
-    button{
-    width: 180px;
-    font-size: 20px;
-    padding: 15px;
-    background-color: #364577;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    button {
+      width: 180px;
+      font-size: 20px;
+      padding: 15px;
+      background-color: #364577;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
 
       &:hover {
         background-color: #29365e;
@@ -442,8 +446,65 @@ footer {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 700px) {
   // HOMEPAGE //
-  header {
+  .header, header{
+    max-width: none;
+    margin: none;
+    padding: 0;
     flex-wrap: wrap;
+
+    .for-responsive {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px ;
+      padding: 0 25px;
+
+      img {
+        margin: 0;
+      }
+
+      button {
+        display: block;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        .sr-only {
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+        }
+
+        .bar {
+          margin: 4px;
+          display: block;
+          background-color: rgba(0, 0, 0, 0.5);
+          width: 26px;
+          height: 2px;
+          border-radius: 1px;
+        }
+      }
+    }
+
+    .navigation {
+      width: 100%;
+      display: none;
+      flex-wrap: wrap;
+
+      a {
+        margin: 0;
+        width: 100%;
+        padding: 10px 0 10px 25px ;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        background-color: rgba(0, 0, 0, .05);
+
+        &:hover{
+          background-color: rgba(0, 0, 0, 0.124);
+          border-bottom: 1px solid rgba(0, 0, 0, .1);
+        }
+      }
+    }
   }
 
   .services {
@@ -476,7 +537,6 @@ footer {
   }
 
   footer {
-
     .icons {
       width: 85%;
     }
@@ -484,7 +544,7 @@ footer {
     .items {
       display: block;
 
-      section{
+      section {
         margin-bottom: 30px;
       }
     }
