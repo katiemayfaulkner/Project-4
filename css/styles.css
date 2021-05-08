@@ -285,6 +285,7 @@ footer .icons {
 
 footer .icons a {
   text-align: center;
+  text-decoration: none;
 }
 
 footer .icons a i {
@@ -296,7 +297,6 @@ footer .icons a p {
   margin-top: 10px;
   font-weight: 200;
   color: white;
-  text-decoration: none;
 }
 
 footer .items {
