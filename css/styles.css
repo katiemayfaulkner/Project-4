@@ -289,9 +289,8 @@ footer .icons a {
   text-decoration: none;
 }
 
-footer .icons a i {
-  color: white;
-  font-size: 30px;
+footer .icons a img {
+  width: 30px;
 }
 
 footer .icons a p {

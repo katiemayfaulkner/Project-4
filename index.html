@@ -23,27 +23,24 @@ a11y: Fix all contrast color problems
 
 -->
 
-<head>_
+<head>
 	<meta charset="utf-8">
 	<meta name="description" content="I'm Mike and you should hire me to build your website">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="shortcut icon" type="image/png" href="img/favicon.jpg">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
-	<!-- TODO: remove fontawesome kit-->
-	<script src="https://kit.fontawesome.com/84bc669132.js" crossorigin="anonymous"></script>
 	<title>Homepage - GoMikeDesigns</title>
 </head>
 
-<body>
-
+<body>	
 	<!-- TODO: optimize images-->
-
 	<header>	
 		<nav class="for-responsive">	
 			<img src="img/atlanta%20web%20design%20logo.png" alt="GoMikeDesigns Logo"/>
 
 			<button id="dropdown">
+				<!--FIXME: displa:none on toggle nav-->
 				<span class="sr-only"> Toggle navigation </span>
 				<span class="bar"></span>
 				<span class="bar"></span>
@@ -183,19 +180,19 @@ a11y: Fix all contrast color problems
 
 		<nav class="icons">
 			<a href="index.html">
-				<i class="fab fa-twitter"></i>
+				<img src="img/twitter.svg" alt="solid white twitter icon">
 				<p> Twitter </p> 
 			</a>
 			<a href="index.html">
-				<i class="fab fa-facebook-f"></i>
+				<img src="img/facebook-app-symbol.svg" alt="solid white facebook icon">
 				<p> Facebook </p>
 			</a>
 			<a href="index.html">
-				<i class="fab fa-dribbble"></i>
+				<img src="img/dribbble-logo.svg" alt="">
 				<p>Dribbble</p>
 			</a>
 			<a href="index.html">
-				<i class="fab fa-instagram"></i>
+				<img src="img/instagram.svg" alt="">
 				<p> Instagram </p>
 			</a>	
 		</nav>
@@ -236,7 +233,6 @@ a11y: Fix all contrast color problems
 	</footer>
 
 	<script src="js/main.js"></script>
-	<script src="js/fontawesome.js"></script>
 </body>
 
 </html>
