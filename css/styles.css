@@ -514,10 +514,7 @@ footer .items section a {
   }
   .header .for-responsive button .sr-only,
   header .for-responsive button .sr-only {
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
+    display: none;
   }
   .header .for-responsive button .bar,
   header .for-responsive button .bar {
