@@ -372,7 +372,7 @@ footer .items section a {
   font-weight: 500;
 }
 
-.wrapper form .input label p {
+.wrapper form .input label span {
   font-size: 17px;
   max-width: 600px;
 }
