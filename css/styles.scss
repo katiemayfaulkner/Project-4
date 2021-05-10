@@ -130,7 +130,7 @@ header {
   padding: 90px 25px;
   background-size: cover;
 
-  .wrapper {
+  div{
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -151,11 +151,12 @@ header {
       width: 100%;
     }
 
-    a {
+    form{
+      background-color: transparent;
       margin: 0 auto;
-
+      
       button {
-        width: 180px;
+        width: 160px;
         font-size: 20px;
         padding: 15px;
         background-color: #364577;
@@ -165,10 +166,10 @@ header {
         cursor: pointer;
         transition: all 0.3s ease-in-out;
 
-        &:hover {
-          background-color: #29365e;
-        }
+      &:hover {
+        background-color: #29365e;
       }
+    }
     }
   }
 }
@@ -270,7 +271,6 @@ footer {
         margin-top: 10px;
         font-weight: 200;
         color: white;
-        
       }
     }
   }
@@ -314,7 +314,7 @@ footer {
   }
 }
 
-.wrapper {
+.wrapper{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -399,12 +399,15 @@ footer {
     h3 {
       padding-top: 20px;
     }
+    
   }
 
-  a {
-    margin: 35px auto 0;
+  .btn-form {
+    background-color: transparent;
+    padding: 0;
 
-    button {
+    button{
+      margin: 35px auto 0;
       width: 180px;
       font-size: 20px;
       padding: 15px;
@@ -415,11 +418,12 @@ footer {
       cursor: pointer;
       transition: all 0.3s ease-in-out;
 
-      &:hover {
-        background-color: #29365e;
-      }
+    &:hover {
+      background-color: #29365e;
     }
+    } 
   }
+
 }
 
 /* Medium devices (landscape tablets, 800px and up) */
@@ -437,8 +441,13 @@ footer {
 
   .wrapper {
     margin: 40px 25px;
+    display: block;
 
     .contact-info {
+      margin: 35px 0 0;
+    }
+
+    button{
       margin: 35px 0 0;
     }
   }
@@ -447,7 +456,8 @@ footer {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 700px) {
   // HOMEPAGE //
-  .header, header{
+  .header,
+  header {
     max-width: none;
     margin: none;
     padding: 0;
@@ -457,7 +467,7 @@ footer {
       width: 100%;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 20px ;
+      margin-bottom: 20px;
       padding: 0 25px;
 
       img {
@@ -496,13 +506,13 @@ footer {
       a {
         margin: 0;
         width: 100%;
-        padding: 10px 0 10px 25px ;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background-color: rgba(0, 0, 0, .05);
+        padding: 10px 0 10px 25px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0.05);
 
-        &:hover{
+        &:hover {
           background-color: rgba(0, 0, 0, 0.124);
-          border-bottom: 1px solid rgba(0, 0, 0, .1);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
       }
     }
@@ -555,5 +565,9 @@ footer {
 
   .intro {
     padding: 60px 25px;
+  }
+
+  .wrapper {
+    margin: 25px;
   }
 }

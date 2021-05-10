@@ -145,7 +145,7 @@ header .navigation a:hover {
   background-size: cover;
 }
 
-.description .wrapper {
+.description div {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -155,24 +155,25 @@ header .navigation a:hover {
   text-align: center;
 }
 
-.description .wrapper h2 {
+.description div h2 {
   font-size: 25px;
   line-height: 30px;
 }
 
-.description .wrapper p {
+.description div p {
   margin: 20px 0;
   font-size: 19px;
   line-height: 25px;
   width: 100%;
 }
 
-.description .wrapper a {
+.description div form {
+  background-color: transparent;
   margin: 0 auto;
 }
 
-.description .wrapper a button {
-  width: 180px;
+.description div form button {
+  width: 160px;
   font-size: 20px;
   padding: 15px;
   background-color: #364577;
@@ -184,7 +185,7 @@ header .navigation a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.description .wrapper a button:hover {
+.description div form button:hover {
   background-color: #29365e;
 }
 
@@ -437,11 +438,13 @@ footer .items section a {
   padding-top: 20px;
 }
 
-.wrapper a {
-  margin: 35px auto 0;
+.wrapper .btn-form {
+  background-color: transparent;
+  padding: 0;
 }
 
-.wrapper a button {
+.wrapper .btn-form button {
+  margin: 35px auto 0;
   width: 180px;
   font-size: 20px;
   padding: 15px;
@@ -454,7 +457,7 @@ footer .items section a {
   transition: all 0.3s ease-in-out;
 }
 
-.wrapper a button:hover {
+.wrapper .btn-form button:hover {
   background-color: #29365e;
 }
 
@@ -468,22 +471,28 @@ footer .items section a {
   }
   .wrapper {
     margin: 40px 25px;
+    display: block;
   }
   .wrapper .contact-info {
+    margin: 35px 0 0;
+  }
+  .wrapper button {
     margin: 35px 0 0;
   }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 700px) {
-  .header, header {
+  .header,
+  header {
     max-width: none;
     margin: none;
     padding: 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .header .for-responsive, header .for-responsive {
+  .header .for-responsive,
+  header .for-responsive {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -494,22 +503,26 @@ footer .items section a {
     margin-bottom: 20px;
     padding: 0 25px;
   }
-  .header .for-responsive img, header .for-responsive img {
+  .header .for-responsive img,
+  header .for-responsive img {
     margin: 0;
   }
-  .header .for-responsive button, header .for-responsive button {
+  .header .for-responsive button,
+  header .for-responsive button {
     display: block;
     border: none;
     background-color: transparent;
     cursor: pointer;
   }
-  .header .for-responsive button .sr-only, header .for-responsive button .sr-only {
+  .header .for-responsive button .sr-only,
+  header .for-responsive button .sr-only {
     width: 1px;
     height: 1px;
     padding: 0;
     margin: -1px;
   }
-  .header .for-responsive button .bar, header .for-responsive button .bar {
+  .header .for-responsive button .bar,
+  header .for-responsive button .bar {
     margin: 4px;
     display: block;
     background-color: rgba(0, 0, 0, 0.5);
@@ -517,20 +530,23 @@ footer .items section a {
     height: 2px;
     border-radius: 1px;
   }
-  .header .navigation, header .navigation {
+  .header .navigation,
+  header .navigation {
     width: 100%;
     display: none;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .header .navigation a, header .navigation a {
+  .header .navigation a,
+  header .navigation a {
     margin: 0;
     width: 100%;
     padding: 10px 0 10px 25px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 0, 0, 0.05);
   }
-  .header .navigation a:hover, header .navigation a:hover {
+  .header .navigation a:hover,
+  header .navigation a:hover {
     background-color: rgba(0, 0, 0, 0.124);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
@@ -570,6 +586,9 @@ footer .items section a {
   }
   .intro {
     padding: 60px 25px;
+  }
+  .wrapper {
+    margin: 25px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
