@@ -475,8 +475,8 @@ footer .items section a {
   .wrapper .contact-info {
     margin: 35px 0 0;
   }
-  .wrapper button {
-    margin: 35px 0 0;
+  .btn-form {
+    margin: 0 0 40px 25px;
   }
 }
 
