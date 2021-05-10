@@ -7,13 +7,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="shortcut icon" type="image/png" href="img/favicon.jpg">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<!-- 
+		- Normal I,qges jpg/png
+		- SVG -- Scalable Vector Graphics
+		- Font Icons -> Converting nor,al i,,qges to CSS (to ,qke the, like SVG)
+	-->
+	<!-- CSS Sprites -->
+
+	<!-- FIXME: Get rid of fontawesone, replace it with SVGs or NorMAl iMAges -->
 	<script src="https://kit.fontawesome.com/84bc669132.js" crossorigin="anonymous"></script>
+
+	<!-- TODO: Move script to the end of the <body> -->
 	<script src="./js/formHandler.js"></script>
 
 	<title>Contact - GoMikeDesigns</title>
 </head>
 
 <body>
+
+	<!-- TODO: optimize images-->
+
 	<header class="header" id="top">
 		<nav class="for-responsive">
 
@@ -34,7 +48,7 @@
 	</header>
 	
 	<article class="intro" >
-		<h1> Let's talk web design! </h1>
+		<h1 > Let's talk web design! </h1>
 		<p> I'm super excited that you want to work together.</p>
 		<p>Please fill in the form below or get in touch so I can learn about your project and we can set up time to talk websites and
 		Atlanta city love.
@@ -81,10 +95,12 @@
 		</article>
 	</div>
 
+	<!-- FIXME: change btn to div, remove form-->
 	<form class="btn-form" action="#top">
 		<button> Scroll to top</button>
 	</form>
 
+	<!-- TODO: replace footer icons with svgs from flaticon-->
 	<footer class="contact-footer">
 		<h2> GoMike Designs - Web designer living and loving Atlanta.</h2>
 		<nav class="icons">
@@ -102,6 +118,8 @@
 			</a>
 			<a href="index.html">
 				<i class="fab fa-instagram"></i>
+
+				<!-- To qlso reduce HTTP Reauests-->
 				<p> Instagram </p>
 			</a>
 		</nav>

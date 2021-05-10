@@ -536,6 +536,12 @@ footer .items section a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .header .navigation.show,
+  header .navigation.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .header .navigation a,
   header .navigation a {
     margin: 0;
