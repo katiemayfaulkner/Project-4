@@ -413,6 +413,7 @@ footer .items section a {
   color: white;
   padding: 30px;
   position: relative;
+  margin: 35px 0;
 }
 
 .wrapper .contact-info h2 {
@@ -438,13 +439,11 @@ footer .items section a {
   padding-top: 20px;
 }
 
-.wrapper .btn-form {
-  background-color: transparent;
-  padding: 0;
+.btn-form {
+  margin: 0 0 40px 60px;
 }
 
-.wrapper .btn-form button {
-  margin: 35px auto 0;
+.btn-form button {
   width: 180px;
   font-size: 20px;
   padding: 15px;
@@ -457,7 +456,7 @@ footer .items section a {
   transition: all 0.3s ease-in-out;
 }
 
-.wrapper .btn-form button:hover {
+.btn-form button:hover {
   background-color: #29365e;
 }
 
