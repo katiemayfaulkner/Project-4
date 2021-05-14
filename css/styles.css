@@ -69,21 +69,24 @@ header .navigation a:hover {
   color: white;
 }
 
-.hero button {
-  width: 140px;
-  margin: 30px;
+.hero a {
+  text-decoration: none;
+}
+
+.hero a div {
+  margin: 30px auto;
+  width: 120px;
   font-size: 20px;
   padding: 15px;
   background-color: #f3976c;
   color: black;
   border: none;
   border-radius: 25px;
-  cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-.hero button:hover {
+.hero a div:hover {
   background-color: #c27755;
   color: white;
 }
@@ -167,13 +170,13 @@ header .navigation a:hover {
   width: 100%;
 }
 
-.description div form {
-  background-color: transparent;
+.description div a {
+  text-decoration: none;
   margin: 0 auto;
 }
 
-.description div form button {
-  width: 160px;
+.description div a div {
+  width: 140px;
   font-size: 20px;
   padding: 15px;
   background-color: #364577;
@@ -185,7 +188,7 @@ header .navigation a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.description div form button:hover {
+.description div a div:hover {
   background-color: #29365e;
 }
 
@@ -238,9 +241,13 @@ header .navigation a:hover {
   line-height: 40px;
 }
 
-.contact button {
-  width: 140px;
-  margin-top: 30px;
+.contact a {
+  text-decoration: none;
+}
+
+.contact a div {
+  width: 120px;
+  margin: 30px auto 0;
   font-size: 20px;
   padding: 15px;
   background-color: #f3976c;
@@ -252,7 +259,7 @@ header .navigation a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.contact button:hover {
+.contact a div:hover {
   background-color: #c27755;
   color: white;
 }
@@ -412,7 +419,7 @@ footer .items section a {
   color: white;
   padding: 30px;
   position: relative;
-  margin: 35px 0;
+  margin: 35px 0 0;
 }
 
 .wrapper .contact-info h2 {
@@ -438,12 +445,14 @@ footer .items section a {
   padding-top: 20px;
 }
 
-.btn-form {
-  margin: 0 0 40px 60px;
+a {
+  text-decoration: none;
+  text-align: center;
 }
 
-.btn-form button {
-  width: 180px;
+a div {
+  margin: 0 60px 40px;
+  width: 140px;
   font-size: 20px;
   padding: 15px;
   background-color: #364577;
@@ -455,7 +464,7 @@ footer .items section a {
   transition: all 0.3s ease-in-out;
 }
 
-.btn-form button:hover {
+a div:hover {
   background-color: #29365e;
 }
 
@@ -474,8 +483,8 @@ footer .items section a {
   .wrapper .contact-info {
     margin: 35px 0 0;
   }
-  .btn-form {
-    margin: 0 0 40px 25px;
+  a div {
+    margin: 0 25px 40px;
   }
 }
 

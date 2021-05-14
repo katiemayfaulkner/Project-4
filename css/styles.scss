@@ -61,22 +61,25 @@ header {
     color: white;
   }
 
-  button {
-    width: 140px;
-    margin: 30px;
+  a{
+    text-decoration: none;
+
+    div {
+    margin: 30px auto;
+    width: 120px;
     font-size: 20px;
     padding: 15px;
     background-color: #f3976c;
     color: black;
     border: none;
     border-radius: 25px;
-    cursor: pointer;
     transition: all 0.3s ease-in-out;
 
-    &:hover {
-      background-color: #c27755;
-      color: white;
-    }
+      &:hover {
+        background-color: #c27755;
+        color: white;
+      }
+  }
   }
 }
 
@@ -151,12 +154,12 @@ header {
       width: 100%;
     }
 
-    form{
-      background-color: transparent;
+    a{
+      text-decoration: none;
       margin: 0 auto;
       
-      button {
-        width: 160px;
+      div {
+        width: 140px;
         font-size: 20px;
         padding: 15px;
         background-color: #364577;
@@ -219,9 +222,12 @@ header {
     line-height: 40px;
   }
 
-  button {
-    width: 140px;
-    margin-top: 30px;
+  a{
+    text-decoration: none;
+
+    div {
+    width: 120px;
+    margin: 30px auto 0;
     font-size: 20px;
     padding: 15px;
     background-color: #f3976c;
@@ -235,6 +241,7 @@ header {
       background-color: #c27755;
       color: white;
     }
+  }
   }
 }
 
@@ -376,7 +383,7 @@ footer {
     color: white;
     padding: 30px;
     position: relative;
-    margin: 35px 0;
+    margin: 35px 0 0;
 
     h2 {
       padding-bottom: 15px;
@@ -403,11 +410,13 @@ footer {
   }
 }
 
-.btn-form {
-    margin: 0 0 40px 60px;
+a {
+  text-decoration: none;
+  text-align: center;
 
-    button{
-      width: 180px;
+    div{
+      margin: 0 60px 40px ;
+      width: 140px;
       font-size: 20px;
       padding: 15px;
       background-color: #364577;
@@ -417,9 +426,9 @@ footer {
       cursor: pointer;
       transition: all 0.3s ease-in-out;
 
-    &:hover {
-      background-color: #29365e;
-    }
+      &:hover {
+        background-color: #29365e;
+      }
     } 
   }
 
@@ -445,8 +454,10 @@ footer {
     }
   }
 
-  .btn-form {
-    margin: 0 0 40px 25px;
+  a {
+    div{
+      margin: 0 25px 40px ;
+    } 
   }
 }
 
