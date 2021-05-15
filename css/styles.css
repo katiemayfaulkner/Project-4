@@ -431,14 +431,7 @@ footer .items section a {
 }
 
 .wrapper .contact-info p a {
-  color: #f3976c;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.wrapper .contact-info p a:hover {
-  color: #c27755;
-  text-decoration: none;
+  color: white;
 }
 
 .wrapper .contact-info h3 {
