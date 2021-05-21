@@ -259,53 +259,54 @@ header {
 }
 
 footer {
-  width: 100%;
   background-color: #364577;
   color: white;
-  padding: 35px;
-  box-sizing: border-box;
 
-  h2 {
-    text-align: center;
-    font-size: 18px;
-  }
-
-  .icons {
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    margin: 35px auto;
-
-    a {
+  .container{
+    padding: 35px;
+    
+    h2 {
       text-align: center;
-      text-decoration: none;
-
-      img {
-        width: 30px;
-      }
-
-      p {
-        margin-top: 10px;
-        font-weight: 200;
-        color: white;
-      }
+      font-size: 18px;
     }
-  }
 
-  .items {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-
-    section {
-      display: block;
-      line-height: 25px;
+    .icons {
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+      margin: 35px auto;
 
       a {
+        text-align: center;
         text-decoration: none;
-        color: white;
+
+        img {
+          width: 30px;
+        }
+
+        p {
+          margin-top: 10px;
+          font-weight: 200;
+          color: white;
+        }
+      }
+    }
+
+    .items {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+
+      section {
+        display: block;
+        line-height: 25px;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
       }
     }
   }
@@ -456,6 +457,13 @@ footer {
       margin: 0 25px 40px ;
     } 
   }
+
+  footer{
+
+    .icons{
+      width: 85%;
+    }
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -554,15 +562,23 @@ footer {
   }
 
   footer {
-    .icons {
-      width: 85%;
-    }
 
-    .items {
+    .container{
+
+      .icons {
+        width: 100%;
+      
+        p{
+          color: transparent;
+        } 
+      }
+
+      .items {
       display: block;
 
-      section {
-        margin-bottom: 30px;
+        section {
+          margin-bottom: 30px;
+        }
       }
     }
   }

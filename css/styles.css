@@ -283,20 +283,20 @@ header .container .navigation a:hover {
 }
 
 footer {
-  width: 100%;
   background-color: #364577;
   color: white;
-  padding: 35px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
-footer h2 {
+footer .container {
+  padding: 35px;
+}
+
+footer .container h2 {
   text-align: center;
   font-size: 18px;
 }
 
-footer .icons {
+footer .container .icons {
   width: 40%;
   margin-left: auto;
   margin-right: auto;
@@ -309,22 +309,22 @@ footer .icons {
   margin: 35px auto;
 }
 
-footer .icons a {
+footer .container .icons a {
   text-align: center;
   text-decoration: none;
 }
 
-footer .icons a img {
+footer .container .icons a img {
   width: 30px;
 }
 
-footer .icons a p {
+footer .container .icons a p {
   margin-top: 10px;
   font-weight: 200;
   color: white;
 }
 
-footer .items {
+footer .container .items {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -333,12 +333,12 @@ footer .items {
       justify-content: space-around;
 }
 
-footer .items section {
+footer .container .items section {
   display: block;
   line-height: 25px;
 }
 
-footer .items section a {
+footer .container .items section a {
   text-decoration: none;
   color: white;
 }
@@ -490,6 +490,9 @@ footer .items section a {
   .btn div {
     margin: 0 25px 40px;
   }
+  footer .icons {
+    width: 85%;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -584,13 +587,16 @@ footer .items section a {
   .work-showcase .items h3 {
     padding: 10px 0px;
   }
-  footer .icons {
-    width: 85%;
+  footer .container .icons {
+    width: 100%;
   }
-  footer .items {
+  footer .container .icons p {
+    color: transparent;
+  }
+  footer .container .items {
     display: block;
   }
-  footer .items section {
+  footer .container .items section {
     margin-bottom: 30px;
   }
   .intro {
