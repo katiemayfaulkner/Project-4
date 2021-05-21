@@ -31,26 +31,27 @@ a11y: Fix all contrast color problems
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 	<title>Homepage - GoMikeDesigns</title>
-</head>
+</head> 
 
 <body>	
-	<!-- TODO: optimize images-->
-	<header>	
-		<nav class="for-responsive">	
-			<img src="img/atlanta-web-design-logo.png" alt="GoMikeDesigns Logo"/>
+	<header>
+		<div class="container">
+			<nav class="for-responsive">	
+				<img src="img/atlanta-web-design-logo.png" alt="GoMikeDesigns Logo"/>
 
-			<button id="dropdown" onclick="toggleFunction()" aria-label="dropdown menu">
-				<span class="sr-only"> Toggle navigation </span>
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
-			</button>
-		</nav>
-		
-		<nav class="navigation" id="dropdown-menu">		
-			<a href="index.html">Home</a>	
-			<a href="contact.html">Contact</a>	
-	    </nav>		
+				<button id="dropdown" onclick="toggleFunction()" aria-label="dropdown menu">
+					<span class="sr-only"> Toggle navigation </span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</button>
+			</nav>
+			
+			<nav class="navigation" id="dropdown-menu">		
+				<a href="index.html">Home</a>	
+				<a href="contact.html">Contact</a>	
+			</nav>	
+		</div>
 	</header>
 			
 	<div class="hero" style="background-image: url(img/atlanta-made-blue.jpeg);">

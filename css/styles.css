@@ -6,8 +6,11 @@
   scroll-behavior: smooth;
 }
 
-header {
+header .container {
   width: 100%;
+  padding: 0 15px;
+  max-width: 1170px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,20 +19,33 @@ header {
           justify-content: space-between;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 900px;
-  margin: 25px auto 0;
+  position: relative;
 }
 
-header img {
+header .container .for-responsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .for-responsive img {
   height: 40px;
-  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header button {
+header .container .for-responsive button {
   display: none;
 }
 
-header .navigation {
+header .container .navigation {
   width: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,17 +55,16 @@ header .navigation {
           justify-content: space-between;
 }
 
-header .navigation a {
+header .container .navigation a {
   text-decoration: none;
   color: black;
   font-size: 17px;
   font-weight: 500;
   border-bottom: white solid 4px;
-  padding: 0 20px 25px;
-  margin-top: 10px;
+  padding: 25px 20px;
 }
 
-header .navigation a:hover {
+header .container .navigation a:hover {
   border-bottom: #f3976c solid 4px;
 }
 
@@ -325,10 +340,6 @@ footer .items section a {
   color: white;
 }
 
-.header {
-  max-width: 1300px;
-}
-
 .intro {
   background-color: #364577;
   color: white;
@@ -463,9 +474,6 @@ footer .items section a {
 
 /* Medium devices (landscape tablets, 800px and up) */
 @media only screen and (max-width: 800px) {
-  header {
-    padding: 0 25px;
-  }
   .intro {
     padding: 60px 0 60px 25px;
   }
@@ -483,43 +491,38 @@ footer .items section a {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 700px) {
-  .header,
-  header {
-    max-width: none;
-    margin: none;
+  .header .container,
+  header .container {
+    display: block;
     padding: 0;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
-  .header .for-responsive,
-  header .for-responsive {
-    width: 100%;
+  .header .container .for-responsive,
+  header .container .for-responsive {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 20px;
-    padding: 0 25px;
+    padding: 15px;
   }
-  .header .for-responsive img,
-  header .for-responsive img {
+  .header .container .for-responsive img,
+  header .container .for-responsive img {
     margin: 0;
   }
-  .header .for-responsive button,
-  header .for-responsive button {
+  .header .container .for-responsive button,
+  header .container .for-responsive button {
     display: block;
     border: none;
     background-color: transparent;
     cursor: pointer;
   }
-  .header .for-responsive button .sr-only,
-  header .for-responsive button .sr-only {
+  .header .container .for-responsive button .sr-only,
+  header .container .for-responsive button .sr-only {
     display: none;
   }
-  .header .for-responsive button .bar,
-  header .for-responsive button .bar {
+  .header .container .for-responsive button .bar,
+  header .container .for-responsive button .bar {
     margin: 4px;
     display: block;
     background-color: rgba(0, 0, 0, 0.5);
@@ -527,29 +530,29 @@ footer .items section a {
     height: 2px;
     border-radius: 1px;
   }
-  .header .navigation,
-  header .navigation {
+  .header .container .navigation,
+  header .container .navigation {
     width: 100%;
     display: none;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .header .navigation.show,
-  header .navigation.show {
+  .header .container .navigation.show,
+  header .container .navigation.show {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .header .navigation a,
-  header .navigation a {
+  .header .container .navigation a,
+  header .container .navigation a {
     margin: 0;
     width: 100%;
     padding: 10px 0 10px 25px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 0, 0, 0.05);
   }
-  .header .navigation a:hover,
-  header .navigation a:hover {
+  .header .container .navigation a:hover,
+  header .container .navigation a:hover {
     background-color: rgba(0, 0, 0, 0.124);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
