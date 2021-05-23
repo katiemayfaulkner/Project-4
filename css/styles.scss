@@ -10,7 +10,6 @@ html {
 }
 
 // HOMEPAGE //
-
 header {
   .container {
     width: 100%;
@@ -508,6 +507,7 @@ footer {
         border: solid 2px black;
         margin-bottom: 15px;
       }
+
       textarea {
         height: 60px;
         width: 80%;
@@ -597,12 +597,14 @@ footer {
   }
 
   .btn {
+
     div {
       margin: 0 25px 40px;
     }
   }
 
   .modal-content {
+
     img {
       padding-bottom: 10px;
     }
@@ -624,6 +626,7 @@ footer {
   // HOMEPAGE //
   .header,
   header {
+
     .container {
       display: block;
       padding: 0;
@@ -684,6 +687,7 @@ footer {
   }
 
   .services {
+
     h2 {
       font-size: 25px;
       margin: 0 25px 30px;
@@ -713,7 +717,9 @@ footer {
   }
 
   footer {
+
     .container {
+
       .icons {
         width: 100%;
 
@@ -733,7 +739,6 @@ footer {
   }
 
   // CONTACT PAGE //
-
   .intro {
     padding: 60px 25px;
   }

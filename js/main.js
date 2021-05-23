@@ -1,15 +1,14 @@
+//DROPDOWN MENU (responsive)
+// Dropdown appears/disappears on click
 var dropdownBtn = document.getElementById("dropdown")
 var dropdownMenu = document.getElementById("dropdown-menu")
 console.log(dropdownBtn)
 
-// dropdownBtn.onclick = function() {
-//   dropdownMenu.style.display = "flex"   
-// }
 dropdownBtn.addEventListener('click', function() {
   dropdownMenu.classList.toggle('show')
 })
 
-
+// LIGHTBOX
 // Open the Modal
 function openModal() {
   document.getElementById("myModal").style.display = "flex";
