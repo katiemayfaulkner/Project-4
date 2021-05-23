@@ -26,7 +26,7 @@ a11y: Fix all contrast color problems
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="I'm Mike and you should hire me to build your website">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/png" href="img/favicon.jpg">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -121,46 +121,117 @@ a11y: Fix all contrast color problems
 		</div>
 	</article>
 		
+
+
+
+
+
 	<article class="work-showcase">
 		<h2> Websites I've designed and developed for Atlanta companies that resulted in more local business. </h2>
 
 		<div class="items">
 			<div class="item">
-				<a href="#" data-lightbox="img/atlanta-dog-sitter-website.jpeg" data-gallery-id="gallery-1" data-caption="Website for Atlanta's Premiere dog salon" data-frame="snapshot-lb">
+				<a onclick="openModal();currentSlide(1)" >
 					<img src="img/atlanta-dog-sitter-website.jpeg" alt="Japanese spitz dog standing in front of his owner in the middle of the street in Atlanta"/>
+					<div class="overlay">
+						<p> + </p>
+					</div>
 				</a>
 				<h3> Website for Atlanta's premiere Dog Sitters </h3>
 				<p> I love dogs and was super excited to make a website for an Atlanta dog company. </p>
 			</div>
 
 			<div class="item">
-				<a href="#" data-lightbox="img/atlanta-cupcakes-website.jpeg" data-gallery-id="gallery-1" data-caption="web redesign for the best cupcakes in Atlanta" data-frame="snapshot-lb"> 
+				<a onclick="openModal();currentSlide(2)" > 
 					<img src="img/atlanta-cupcakes-website.jpeg" alt="Four cupcakes, with multicolored sprinkes and blue icing, lined up in front of a blue and pink backdrop"/> 
+					<div class="overlay"> 
+						<p> + </p>
+					</div>
 				</a>
-				<h3> Web redesign for the best Atlanta's cupcakes </h3>
+				<h3> Web redesign for the best Atlanta cupcakes </h3>
 				<p> They make the best cupcakes in Atlanta and I wanted to show this online.</p>
 			</div>
 		</div>
 
 		<div class="items">
 			<div class="item">
-				<a href="#" data-lightbox="img/kraken/atlanta-tech-gear-website.jpeg" data-gallery-id="gallery-1" data-caption="New logo and website for Atlanta's best tech gear shop" data-frame="snapshot-lb">
+				<a onclick="openModal();currentSlide(3)" >
 					<img src="img/atlanta-tech-gear-website.jpeg" alt="Photography and tech equipement spread out orderly on a dark grey backdrop"/>
+					<div class="overlay">
+						<p> + </p>
+					</div>
 				</a>
 				<h3> New logo and website for Atl + Gear - Atlanta's best tech gear shop </h3>
 				<p> Whenever I'm wanting to improve my web design skills, this shop inspires me. </p>
 			</div>
 
 			<div class="item">
-				<a href="#" data-lightbox="img/kraken/atlanta-legal-website.jpeg" data-gallery-id="gallery-1" data-caption="Atlanta's legal website generates 30% more clients after web redesign" data-frame="snapshot-lb">
+				<a onclick="openModal();currentSlide(4)" >
 					<img src="img/atlanta-legal-website.jpeg" alt ="Smiling lawyer in a dark blue suit sitting in a helicopter on top of one of Atlanta's buildings"/>
+					<div class="overlay">
+						<p> + </p>
+					</div>
 				</a>
 				<h3> Atlanta's new legal website - Generating 30% more law clients with a refresh </h3>
 				<p> A few months ago, I created their new website and it's bringing lots of leads. </p>
 			</div>
 		</div>
+
+		<div id="myModal" class="modal">
+			<div class="container">
+				<div class="modal-content">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="mySlides">
+						<img src="img/atlanta-dog-sitter-website.jpeg"
+							alt="Japanese spitz dog standing in front of his owner in the middle of the street in Atlanta" />
+						<div class="caption-container">
+							<p id="caption"> Website for Atlanta's Premiere dog salon </p>
+						</div>
+					</div>
+				
+					<div class="mySlides">
+						<img src="img/atlanta-cupcakes-website.jpeg"
+							alt="Four cupcakes, with multicolored sprinkes and blue icing, lined up in front of a blue and pink backdrop" />
+						<div class="caption-container">
+							<p id="caption"> Web redesign for the best cupcakes in Atlanta </p>
+						</div>
+					</div>
+				
+					<div class="mySlides">
+						<img src="img/atlanta-tech-gear-website.jpeg"
+							alt="Photography and tech equipement spread out orderly on a dark grey backdrop" />
+						<div class="caption-container">
+							<p id="caption"> New logo and website for Atlanta's best tech gear shop </p>
+						</div>
+					</div>
+				
+					<div class="mySlides">
+						<img src="img/atlanta-legal-website.jpeg"
+							alt="Smiling lawyer in a dark blue suit sitting in a helicopter on top of one of Atlanta's buildings" />
+						<div class="caption-container">
+							<p id="caption"> Atlanta's legal website generates 30% more clients after web redesign</p>
+						</div>
+					</div>
+				
+					<!-- Next/previous controls -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+			</div>
+			
+		</div>
+
+
+
+		
 	</article>
 		
+
+
+
+
+
+
 	<article class = "contact" style="background-image: url(img/atlanta-made-blue.jpeg);">
 		<h2 > Ready for a great website? <br> Let's design! </h2>
 		<a href="contact.html">
